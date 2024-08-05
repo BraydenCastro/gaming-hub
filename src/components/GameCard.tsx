@@ -3,7 +3,7 @@ import { Games } from "../Hooks/usedGames";
 import React from "react";
 import CriticScore from "./CriticScore";
 import PlatformIconList from "./PlatformIconList";
-import getCroppedImageUrl from "./images-urls";
+import getCroppedImageUrl from "../services/images-urls";
 
 interface Props {
   game: Games;

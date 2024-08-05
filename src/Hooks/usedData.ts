@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 interface FetchResponse<T>{
-
+count:number;
+results: T[];
 }
 
-const useData = <T>(p0: string) => {
+const useData = <T>(endpoint: string) => {
     const [Data, setData] = useState<T[]>([]);
     const [error, setError] = useState('');
     const [isLoading,setLoading] = useState(false);
