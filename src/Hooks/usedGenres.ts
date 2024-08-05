@@ -1,5 +1,5 @@
 
-import useData from "./usedData";
+import useData from "./useData";
 
 export interface Genre{
     image_background: string;
