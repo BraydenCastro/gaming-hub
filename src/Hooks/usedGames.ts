@@ -46,7 +46,7 @@ const useGames = () => {
  
     )
 
-    return {games,error};
+    return {games,error,isLoading};
 }
 
 export default useGames 
